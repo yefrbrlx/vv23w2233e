@@ -12,14 +12,12 @@ local window = library:CreateWindow('Cultware') do
             
 		folder:AddBox({text = "Prediction", flag = "predictionFlag", value = "15", callback = function(g) timetoaim = g end})
 		folder:AddBox({text = "Long Range Y Axis", flag = "aimheightFlag", value = "-0.1", callback = function(a) ballisticsboost = a end})
-		folder:AddBox({text = "Close Range Y Axis", flag = "aimHEIGHT2Flag", value = "-0.2", callback = function(b) ballisticsboost2 = b end})
+		folder:AddBox({text = "Close Range Y Axis", flag = "aimHEIGHT2Flag", value = "0.1", callback = function(b) ballisticsboost2 = b end})
 		
-		folder:AddBind({text = "Long Range Key", flag = "farBind", key = "P", callback = function() end})
+		folder:AddBind({text = "Long Range Key", flag = "farBind", key = "", callback = function() end})
 		folder:AddBind({text = "Close Range Key", flag = "closeBind", key = "Q", callback = function() end})
 		folder:AddBind({text = "Toggle Visibility", flag = "keyHide", key = "RightControl", callback = function() 
 		       
-            
-          sex = not sex
 		        window.main.Visible = sex
 		    end})
 	end
