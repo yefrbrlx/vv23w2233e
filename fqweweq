@@ -10,7 +10,7 @@ local window = library:CreateWindow('Cultware') do
 		folder:AddToggle({ text = 'ESP', flag = 'esp' })
         ]]
             
-		folder:AddBox({text = "Prediction", flag = "predictionFlag", value = "15", callback = function(g) timetoaim = g end})
+		folder:AddBox({text = "Prediction", flag = "predictionFlag", value = "31.4", callback = function(g) timetoaim = g end})
 		folder:AddBox({text = "Long Range Y Axis", flag = "aimheightFlag", value = "-0.1", callback = function(a) ballisticsboost = a end})
 		folder:AddBox({text = "Close Range Y Axis", flag = "aimHEIGHT2Flag", value = "0.1", callback = function(b) ballisticsboost2 = b end})
 		
